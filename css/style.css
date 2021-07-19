@@ -26,6 +26,12 @@ ul {
   list-style-type: none;
 }
 
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
 h4 {
   font-size: 1.6rem;
   font-weight: 300;
@@ -179,6 +185,86 @@ nav {
   font-size: 10px;
 }
 
+/* Library Section */
+.library {
+  padding: 6rem 8rem;
+}
+
+.library-header {
+  text-align: center;
+}
+
+.header-md {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.library-header-content {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0 300px;
+}
+
+.library-grid-container {
+  margin-top: 2rem;
+}
+
+/* .library-grid-item {
+  position: relative;
+} */
+
+.library-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.library-item {
+  padding: 30px
+}
+
+.library-item-eyebrow {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.library-item-category {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transform: translateY(-9px);
+}
+
+.library-grid-item-1 {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../img/cover-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.library-grid-item-2 {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../img/cover-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.library-grid-item-3 {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../img/cover-3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.library-grid-item-4 {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../img/cover-4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+
 /* Responsive Settings */
 @media(max-width: 768px) {
   .header {
@@ -217,12 +303,58 @@ nav {
     font-size: 1rem;
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
+  .library {
+    padding: 30px;
+  }
+
+  .library-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .library-header-content {
+    font-size: 1rem;
+    padding: 30px;
+  }
 
 }
 
 @media(max-width: 500px) {
   .header {
     height: 70vh;
+  }
+
+  .library-item {
+    padding: 10px;
+  }
+
+  .library-item-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+
+  .library-item-category {
+    font-size: 18px;
+    transform: translateY(-5px);
+  }
+
+  .library-grid-item-1 {
+    height: 300px;
+  }
+
+  .library-grid-item-2 {
+    height: 300px;
+  }
+
+  .library-grid-item-3 {
+    height: 300px;
+  }
+
+  .library-grid-item-4 {
+    height: 300px;
   }
 }
 
