@@ -308,6 +308,100 @@ nav {
   font-size: 1.5rem;
 }
 
+.welcomeTabs {
+  position: relative;
+}
+
+.welcome-background {
+  height: 870px;
+}
+
+.welcome-background-1 {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../img/live-sports.jpg);
+  background-size: cover;
+}
+
+.welcome-background-2 {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../img/breaking-news.jpg);
+  background-size: cover;
+}
+
+.welcome-background-3 {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../img/biggest-events.jpg);
+  background-size: cover;
+}
+
+.welcome-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container-inner {
+  height: 85%;
+  width: 60%;
+}
+
+.welcome-container-tabs {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.welcome-container-tabs-item {
+  cursor: pointer;
+  outline: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-weight: bold;
+  /* letter-spacing: 1px; */
+  margin-right: 2.3rem;
+  font-size: 12px;
+  padding-bottom: 1rem;
+}
+
+.active {
+  color: #fff;
+  border-bottom: 5px #fff solid;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  width: 530px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.logo-row-item {
+  background-image: url(../img/network-logo-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.logo-row-item img {
+  width: 45px;
+}
+
+.inactive {
+  display: none;
+}
+
 /* Responsive Settings */
 @media(max-width: 768px) {
   .header {
@@ -377,6 +471,37 @@ nav {
     font-size: 12px;
   }
 
+  .welcome-background {
+    height: 550px;
+  }
+
+  .welcome-container-tabs {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .welcome-container-inner {
+    width: 85%;
+  }
+
+  .welcome-container-content {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .welcome-text {
+    font-size: 16px;
+    margin: 1rem auto;
+  }
+
+  .logo-row {
+    justify-content: center;
+  }
+
+  .logo-row-item {
+    margin: 0 0.8rem;
+  }
+
 }
 
 @media(max-width: 500px) {
@@ -420,6 +545,29 @@ nav {
   
   .section-title-content {
     width: 300px;
+  }
+
+  .welcome-container-tabs {
+    font-size: 10px;
+  }
+
+  .welcome-container-tabs-item {
+    margin-right: 10px;
+  }
+
+  .welcome-text {
+    letter-spacing: 0;
+    width: 80%;
+  }
+
+  .logo-row-item {
+    height: 50px;
+    width: 50px;
+    
+  }
+  
+  .logo-row-item img {
+    width: 35px;
   }
 }
 
