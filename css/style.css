@@ -202,7 +202,8 @@ nav {
 .library-header-content {
   font-size: 1.2rem;
   font-weight: 300;
-  padding: 0 300px;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .library-grid-container {
@@ -346,7 +347,7 @@ nav {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .library {
@@ -359,7 +360,21 @@ nav {
 
   .library-header-content {
     font-size: 1rem;
-    padding: 30px;
+    /* width: 350px; */
+  }
+
+  .section-title-container {
+    padding: 4.5rem 2rem 1rem 2rem;
+    
+  }
+
+  .section-title-content {
+    font-size: 1rem;
+    width: 600px;
+  }
+
+  .btn-area {
+    font-size: 12px;
   }
 
 }
@@ -397,6 +412,14 @@ nav {
 
   .library-grid-item-4 {
     height: 300px;
+  }
+
+  .library-header-content {
+    width: 350px;
+  }
+  
+  .section-title-content {
+    width: 300px;
   }
 }
 
